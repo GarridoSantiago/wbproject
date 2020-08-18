@@ -13,6 +13,7 @@ function tolowmuch {
 		echo "==That was wrong :(. Try again=="
 	fi
 }
+
 f=0
 echo "Take a guess. How many files you think are in this directory?  "
 while [[ $f -eq 0 ]]
