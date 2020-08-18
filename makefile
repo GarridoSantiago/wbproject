@@ -20,3 +20,4 @@ README.md:
 
 clean:
 	rm README.md
+	git add -A
