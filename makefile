@@ -15,5 +15,8 @@ README.md:
 	echo -n "###### " >> README.md
 	wc -l guessinggame.sh | egrep -o '[0-9]+' >> README.md
 
+	
+	git add -A
+
 clean:
 	rm README.md
