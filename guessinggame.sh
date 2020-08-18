@@ -1,11 +1,11 @@
 function tolowmuch {
-	if [[ $1 -lt $(ls | wc -l) ]]
+	if [[ $1 -lt $(ls | wc -l) ]] && [[ $1 =~ [0-9]+ ]]
 	then
 		echo "Your guess is to low"
-	elif [[ $1 -gt $(ls | wc -l) ]]
+	elif [[ $1 -gt $(ls | wc -l) ]] && [[ $1 =~ [0-9]+ ]]
 	then
 		echo "Your guess is to high"
-	elif [[ $1 -eq $(ls | wc -l) ]]
+	elif [[ $1 -eq $(ls | wc -l) ]] && [[ $1 =~ [0-9]+ ]]
 	then
 		echo "CONGRATULATIONS! YOUR GUESS IS RIGHT!"
 	else
